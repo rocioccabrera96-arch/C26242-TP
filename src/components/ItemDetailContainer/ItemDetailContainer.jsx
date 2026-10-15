@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
-import { getProductById } from "../../services/productsService";
 
 export const ItemDetailContainer = () => {
   const { id } = useParams();
@@ -10,19 +9,27 @@ export const ItemDetailContainer = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    //Si volvieramos a renderizar el componente porque usamos "productos relacionados"
-    //Se tendria que volver a renderizar ItemDetailContainer con el nuevo detalle.
-    //Entonces: el array de dependencias del useEffect debe llevar el "id" y deberiamos
-    //Resetear los estados de loading y error
     setItemDetail(null);
     setLoading(true);
     setError(null);
 
-    //Usamos la funcion del productsService.js
-    getProductById(id)
-      .then((data) => setItemDetail(data))
+    fetch("/data/products.json")
+      .then((res) => res.json())
+      .then((data) => {
+        // Aquí la profe convierte el id del JSON a String para compararlo con el de la URL
+        const item = data.find((product) => String(product.id) === id);
+        
+        if (item) {
+          setItemDetail(item);
+          return;
+        }
+        
+        // Si no lo encuentra, lanza este error
+        throw new Error("Elemento no encontrado");
+      })
       .catch((error) => setError(error.message))
       .finally(() => setLoading(false));
+      
   }, [id]);
 
   if (loading) return <p>Cargando...</p>;

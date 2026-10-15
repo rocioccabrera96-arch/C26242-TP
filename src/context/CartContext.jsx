@@ -30,22 +30,17 @@ export const CartProvider = ({ children }) => {
     return inCart;
   };
 
-  const addItem = (item) => {
+const addItem = (item) => {
     if (isInCart(item)) {
-      alert("El producto ya existe en el carrito");
-      return;
+      return false;
     }
-    //Forma funcional "prev"
-    //setCart(prev => [...prev, item])
     setCart([...cart, item]);
-    alert("Producto agregado al carrito 🎉");
+    return true;
   };
-
   //Eliminar del carrito
   const removeItem = (id) => {
     const updatedCart = cart.filter((element) => element.id !== id);
     setCart(updatedCart);
-    alert("Producto eliminado ✅");
 
     //Forma funcional "prev"
     //setCart((prev) => prev.filter((element) => element.id !== id));

@@ -1,50 +1,50 @@
 [
   {
-    "id": 1,
-    "name": "Zapatito Bebé Azul",
-    "description": "Zapatilla tipo lona en azul vibrante con puntera reforzada y cordones elásticos. Ideales para gateo y sus primeros pasos con total seguridad.",
-    "price": 12500,
-    "image": "/img/footware/bebe-azul.jpg",
-    "category": "infantil"
+    "id": "1",
+    "name": "Michi Adaptable",
+    "description": "Este michi se adapta a cualquier espacio, se adapta a cualquier ser, como su nombre lo dice, es adaptable.",
+    "price": 5000,
+    "image": "/img/footware/michi-compacto.jpg",
+    "category": "Macho"
   },
   {
-    "id": 2,
-    "name": "Zapatito Bebé Rosa",
-    "description": "Zapatos estilo Guillermina en color fucsia con detalle de moño. Suela blanda y flexible, perfecta para proteger los pies de tu bebé con delicadeza.",
-    "price": 12500,
-    "image": "/img/footware/bebe-rosa.jpg",
-    "category": "infantil"
+    "id": "2",
+    "name": "Michi Existencial",
+    "description": "Mira a la nada, piensa en todo. Excelente compañia para quien necesita repensar su rumbo de vida.",
+    "price": 5000,
+    "image": "/img/footware/michi-existencial.jpg",
+    "category": "Hembra"
   },
   {
-    "id": 3,
-    "name": "Sandalia Dama Verano",
-    "description": "Sandalias de tacón alto en cuero texturizado rosa neón. Diseño de plataforma ancha que combina tendencia y estabilidad para salidas nocturnas.",
-    "price": 28900,
-    "image": "/img/footware/sandalia.jpg",
-    "category": "dama"
+    "id": "3",
+    "name": "Michi Homeoffice",
+    "description": "Si la vida lo permitiera viviria de pijama. Que mejor compañero para quien trabaja desde casa.",
+    "price": 5000,
+    "image": "/img/footware/michi-homeoffice.jpg",
+    "category": "Macho"
   },
   {
-    "id": 4,
-    "name": "Zapato Dama Elegante",
-    "description": "Stilettos clásicos en cuero charolado color borravino. Punta fina y tacón aguja para un look sofisticado de oficina o eventos de gala.",
-    "price": 35000,
-    "image": "/img/footware/zapato-dama.jpg",
-    "category": "dama"
+    "id": "4",
+    "name": "Michi Panzon",
+    "description": "Nada más que agregar, es un michi panzon no se puede pedir más.",
+    "price": 5000,
+    "image": "/img/footware/michi-panzon.jpg",
+    "category": "Macho"
   },
   {
-    "id": 5,
-    "name": "Zapato Hombre Oxford",
-    "description": "Zapatos Oxford de cuero genuino color suela con acabado artesanal. Un clásico atemporal con cordones encerados para el hombre moderno.",
-    "price": 42000,
-    "image": "/img/footware/zapato-hombre.jpg",
-    "category": "hombre"
+    "id": "5",
+    "name": "Michi Standupero",
+    "description": "No importa que tan malos sean tus chistes él te va a apoyar en tu busqueda",
+    "price": 5000,
+    "image": "/img/footware/michi-standupero.jpg",
+    "category": "Macho"
   },
   {
-    "id": 6,
-    "name": "Zapato Hombre Marrón Premium",
-    "description": "Calzado de vestir en cuero mate color chocolate. Incluye detalles de costura a mano y suela de alta durabilidad, ideales para uso intensivo formal.",
-    "price": 45500,
-    "image": "/img/footware/zapato-hombre-2.jpg",
-    "category": "hombre"
+    "id": "6",
+    "name": "Marisol",
+    "description": "La mejor compañia anti mounstruos, el doble de vigilancia.",
+    "price": 6000,
+    "image": "/img/footware/michi-virolo.jpg",
+    "category": "Hembra"
   }
 ]

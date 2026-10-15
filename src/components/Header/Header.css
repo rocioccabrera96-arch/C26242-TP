@@ -2,7 +2,7 @@ header {
   background: var(--surface);
   border-bottom: 1px solid var(--border);
 
-  padding: 1rem 3rem;
+  padding: 0.1rem 3rem;
 
   display: flex;
   justify-content: space-between;
@@ -16,7 +16,7 @@ header {
 }
 
 .logo-container img {
-  width: 45px;
+  width: 100px;
 }
 
 .logo-container span {
